@@ -1,0 +1,84 @@
+.booking_discount{
+    width: 100%;
+    min-height: 58rem;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    .container{
+        position: relative;
+    }
+    h4{
+        font-weight: 600;
+        text-transform: capitalize;
+        font-size: 15px;
+        line-height: 21px;
+        margin-bottom: 3px;
+        font-family: var(--CommonFont);
+        color: var(--OffWhiteColor);
+    }
+    h1{
+        font-size: 6.4rem;
+        line-height: 7.5rem;
+        color: var(--OffWhiteColor);
+        font-weight: 700;
+    }
+    .buttons_wrapper{
+        margin-top: 3rem;
+        .custom_button{
+            margin-right: 2rem;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    .discount{
+        background-color: var(--PrimaryColor);
+        width: 14.4rem;
+        height: 15.4rem;
+        transform: rotate(18deg);
+        position: absolute;
+        top: 0;
+        left: 50rem;
+        bottom: 0;
+        margin: auto;
+        z-index: 1;
+        &::after{
+            position: absolute;
+            content: '';
+            width: 90px;
+            height: 90px;
+            background-color: var(--PrimaryColor);
+            opacity: 0.5;
+            bottom: -10px;
+            right: -10px;
+            z-index: -1;
+        }
+        h2{
+            font-size: 6rem;
+            line-height: 4rem;
+            margin-bottom: 0;
+            color: var(--OffWhiteColor);
+            text-align: center;
+            span{
+                font-size: 3.2rem;
+                text-transform: uppercase;
+                line-height: 21px;
+                line-height: 30px;
+                margin-bottom: 7px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .booking_discount{
+        padding: 10rem 0 33rem;
+        display: block !important;
+        .discount{
+            top: auto;
+            bottom: -126px;
+            left: 0;
+            right: 0;
+        }
+    }
+}

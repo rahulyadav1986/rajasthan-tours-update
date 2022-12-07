@@ -1,0 +1,127 @@
+footer{
+    width: 100%;
+    background-color: #060c17;
+    position: relative;    
+    margin-top: 10rem;
+    z-index: 1;
+    .left{
+        width: 100%;
+        padding-right: 4rem;
+    }
+    
+    &::before{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-image: url(../../images/f_bg.png);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        content: "";
+        z-index: -1;
+        opacity: .5;
+
+    }
+    .top_details_section{
+        width: 100%;
+        background-color: var(--PrimaryColor);
+        padding: 2rem;
+        font-size: 2.6rem;
+        border-radius: 8px;
+        color: var(--whiteColor);
+        font-family: var(--headingFont);
+        position: relative;
+        top: -5.4rem;
+        i{
+            width: 70px;
+            height: 70px;
+            background-color: var(--SecondaryColor);
+            text-align: center;
+            font-size: 35px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 3rem;
+        }
+        
+    }
+    .main_area{
+        width: 100%;
+        padding-bottom: 1rem;
+        h2{
+            color: var(--whiteColor);
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        p{
+            color: var(255,255,255,.5);
+            margin-bottom: 2rem;
+        }
+        .social{
+            li{
+                margin-right: 1rem;
+                &:last-child{
+                    margin-right: 0;
+                }
+                a{
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 5px;
+                    color: var(--whiteColor);
+                    &.facebook{
+                        background-color: #385da9;
+                    }
+                    &.instagram{
+                        background-color: #33ccff ;
+                    }
+                    &.linkedin{
+                        background-color: #0073b1;
+                    }
+                }
+            }
+        }
+        .address_area{
+            li{
+                color: rgba(255, 255, 255, 0.5);
+                flex: 0 0 50%;
+                font-size: 14px;
+                padding-right: 3rem;
+                &:last-child{
+                    padding-right: 0;
+                }
+            }
+            i{
+                font-size: 5rem;
+                color: var(--PrimaryColor);
+                margin-right: 16px;
+            }
+        }
+        .ft_menu{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+            margin-top: 2rem;
+            li{
+                a{
+                    color: rgba(255, 255, 255, 0.5); 
+                    font-size: 14px; 
+                    transition: all .5s ease-in-out;
+                    &:hover{
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+    }
+    .copy_right{
+        margin-top: 2rem;
+        width: 100%;
+        padding: 15px 0;
+        border-top: rgba(255,255,255,.1) 1px solid;
+        color: rgba(255,255,255,.5);
+        font-size: 14px;
+        text-align: center;
+    }
+}

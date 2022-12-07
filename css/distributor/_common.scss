@@ -1,0 +1,137 @@
+:root{
+    --PrimaryColor: #ee4f27;
+    --SecondaryColor: #112c41;
+    --whiteColor: #f8f9ff;
+    --OffWhiteColor: #f2f4ff;
+    --body-fonts-color: #787780;
+    --headingFont: 'Cormorant Infant', serif;
+    --CommonFont: 'Mulish', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--body-fonts-color);
+    font-family: var(--CommonFont);
+}
+a{
+    color: var(--body-fonts-color);
+    text-decoration: none;
+}
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1, h2, h3, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+    font-family: var(--headingFont);
+    color: var(--SecondaryColor);
+}
+p{
+    margin: 0;
+}
+.pt{
+    padding-top: 8rem;
+}
+.pb{
+    padding-bottom: 8rem;
+}
+
+.container{
+    max-width: 1230px;
+}
+
+.custom_button{
+    margin: 0;
+    padding: 1.5rem 3rem;
+    font-family: var(--CommonFont);
+    font-size: 1.7rem;
+    border: var(--SecondaryColor) 1.5px solid;
+    text-transform: capitalize;
+    color: var(--SecondaryColor);
+    border-radius: 8px;
+    display: inline-flex;
+    transition: all .5s ease-in;
+    &:hover{
+        background-color: var(--PrimaryColor);
+        border-color: var(--PrimaryColor);
+        color: var(--OffWhiteColor);
+    }
+    &.small{
+        padding: 1rem 3rem;
+        font-size: 12px;
+    }
+    &.white{
+        color: var(--OffWhiteColor);
+        border-color: var(--OffWhiteColor);
+        &:hover{
+            border-color: var(--PrimaryColor);
+        }
+    }
+    &.primary{
+        color: var(--OffWhiteColor);
+        border-color: var(--PrimaryColor);
+        background-color: var(--PrimaryColor);
+        &:hover{
+            border-color: var(--PrimaryColor);
+        }
+    }
+}
+
+.custom_heading{
+    width: 100%;
+    h3{
+        color: var(--body-fonts-color);
+        font-family: var(--CommonFont);
+        font-weight: 600;
+        text-transform: capitalize;
+        font-size: 15px;
+        line-height: 21px;
+        margin-bottom: 3px;
+    }
+    h2{
+        font-weight: 700;
+        font-size: 4.3rem;
+        line-height: 5.6rem;
+        color: var(--SecondaryColor);
+        span{
+            color: var(--PrimaryColor);
+            font-family: var(--headingFont);
+            font-style: italic;
+            font-weight: 400;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px){
+    html{
+        font-size: 55.5%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    html{
+        font-size: 42.5%;
+    }
+    .container{
+        padding: 0 20px
+    }
+}
+
+@media only screen and (max-width: 450px){
+    html{
+        font-size: 39.5%;
+    }
+}
+
