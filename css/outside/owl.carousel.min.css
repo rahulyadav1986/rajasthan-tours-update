@@ -232,7 +232,7 @@
     font-size: 14px;
     margin: 5px;
     padding: 4px 7px;
-    background: #D6D6D6;
+    background: var(--SecondaryColor);
     display: inline-block;
     cursor: pointer;
     border-radius: 3px
@@ -262,7 +262,7 @@
     width: 10px;
     height: 10px;
     margin: 5px 2.5px;
-    background: #eef3f4;
+    background: var(--SecondaryColor);
     display: block;
     -webkit-backface-visibility: visible;
     transition: opacity .2s ease;

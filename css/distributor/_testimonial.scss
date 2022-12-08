@@ -68,15 +68,16 @@
             }
         }
     }
+    .owl-nav.disabled+.owl-dots {
+        margin-top: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }
 
 
-.owl-nav.disabled+.owl-dots {
-    margin-top: 10px;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
+
 
 @media only screen and (max-width: 750px){
     .testimonial_section{

@@ -59,29 +59,7 @@ footer{
             color: var(255,255,255,.5);
             margin-bottom: 2rem;
         }
-        .social{
-            li{
-                margin-right: 1rem;
-                &:last-child{
-                    margin-right: 0;
-                }
-                a{
-                    width: 35px;
-                    height: 35px;
-                    border-radius: 5px;
-                    color: var(--whiteColor);
-                    &.facebook{
-                        background-color: #385da9;
-                    }
-                    &.instagram{
-                        background-color: #33ccff ;
-                    }
-                    &.linkedin{
-                        background-color: #0073b1;
-                    }
-                }
-            }
-        }
+       
         .address_area{
             li{
                 color: rgba(255, 255, 255, 0.5);
@@ -123,5 +101,29 @@ footer{
         color: rgba(255,255,255,.5);
         font-size: 14px;
         text-align: center;
+    }
+}
+
+.social{
+    li{
+        margin-right: 1rem;
+        &:last-child{
+            margin-right: 0;
+        }
+        a{
+            width: 35px;
+            height: 35px;
+            border-radius: 5px;
+            color: var(--whiteColor);
+            &.facebook{
+                background-color: #385da9;
+            }
+            &.instagram{
+                background-color: #33ccff ;
+            }
+            &.linkedin{
+                background-color: #0073b1;
+            }
+        }
     }
 }
